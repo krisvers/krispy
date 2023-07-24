@@ -1,0 +1,10 @@
+-std=c99
+-Iinclude
+-Iplatform/include
+-Wall
+-Wextra
+-Wpedantic
+-std=c99
+-lGL
+-lglfw
+-Iopengl/include
