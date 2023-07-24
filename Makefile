@@ -1,7 +1,7 @@
 CC = clang
 LIBS =
 FLAGS = -Wall -Wextra -std=c99
-DEFINES = -DKEXPORT
+DEFINES = -DKEXPORT -DKLOG_CONSOLE
 INCLUDES = -Iinclude -Iplatform/include
 FILES = $(shell find ./src -type f -name "*.c")
 OUT = ./krispy
