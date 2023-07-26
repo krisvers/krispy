@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\platform",
+    "\\platform\\posix",
+    "\\platform\\posix\\src",
+    "\\platform\\windows",
+    "\\platform\\windows\\lib",
+    "\\platform\\windows\\lib\\mingw",
+    "\\platform\\windows\\lib\\msvc",
+    "\\platform\\windows\\src",
+    "\\src",
+    "\\src\\renderer"
+  ],
+  "SelectedNode": "\\src\\main.c",
+  "PreviewInSolutionExplorer": false
+}

@@ -2,16 +2,16 @@
 #define KRISPY_KAPI_H
 
 #include <krispy.h>
-#include <kplatform.h>
+#include <platform.h>
 
 #ifdef KEXPORT
-	#ifdef KRISPY_KPLATFORM_WINDOWS
+	#ifdef KRISPY_PLATFORM_WINDOWS
 		#define KAPI __declspec(dllexport)
 	#else
 		#define KAPI __attribute__((visibility("default")))
 	#endif
 #else
-	#ifdef KRISPY_KPLATFORM_WINDOWS
+	#ifdef KRISPY_PLATFORM_WINDOWS
 		#define KAPI __declspec(dllimport)
 	#else
 		#define KAPI

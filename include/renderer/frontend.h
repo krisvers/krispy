@@ -3,12 +3,16 @@
 
 #include <krispy.h>
 #include <kapi.h>
+#include <renderer/packet.h>
 
-typedef struct RenderPacket {
-    f64 delta_time;
-} render_packet_t;
+typedef enum RendererFrontendSuccessEnum {
+    RENDERER_FRONTEND_DEINITIALIZATION_ERROR = -1,
+    RENDERER_FRONTEND_INITIALIZATION_ERROR = -1,
+    RENDERER_FRONTEND_SUCCESS = 0,
+} renderer_frontend_success_enum;
 
-KAPI b8 renderer_init(void);
-KAPI void renderer_deinit(void);
+renderer_frontend_success_enum renderer_init(void);
+renderer_frontend_success_enum renderer_draw(renderer_packet_t * packet);
+renderer_frontend_success_enum renderer_deinit(void);
 
 #endif

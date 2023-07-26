@@ -1,6 +1,6 @@
 #include <platform.h>
 
-#ifdef KRISPY_PLATFORM_LINUX
+#ifdef KRISPY_PLATFORM_POSIX
 
 #include <krispy.h>
 #include <platform/console.h>
