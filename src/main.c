@@ -4,8 +4,8 @@
 #include <platform/singleton.h>
 #include <platform/window.h>
 #include <renderer/frontend.h>
-#include <scene/scene.h>
 
+#include <stdlib.h>
 
 b8 running = TRUE;
 
@@ -20,7 +20,6 @@ void should_close(platform_window_t * window) {
 }
 
 int main(void) {
-    scene_t scene;
     if (platform_singleton_init() < PLATFORM_SINGLETON_SUCCESS) {
         PLATFORM_CONSOLE_ERROR("Failed to initialize singleton\n");
         return -1;
